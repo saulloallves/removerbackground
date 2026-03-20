@@ -362,7 +362,7 @@
         const alphaMatting = document.getElementById('alphaMatting');
 
         // API URL - usa proxy local para evitar CORS
-        const API_URL = '/api';
+        const API_URL = '/api/remove';
 
         uploadArea.addEventListener('click', () => fileInput.click());
 
@@ -420,7 +420,7 @@
             }
 
             // URL simples sem parâmetros (tudo via form data)
-            let url = `${API_URL}/`;
+            let url = `${API_URL}`;
 
             try {
                 const response = await fetch(url, {
